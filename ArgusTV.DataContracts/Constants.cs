@@ -47,11 +47,11 @@ namespace ArgusTV.DataContracts
         /// <summary>
         /// The assembly version of all main assemblies.
         /// </summary>
-        public const string AssemblyVersion = "2.3.0.0";
+        public const string AssemblyVersion = "2.4.0.0";
 
         /// <summary>
         /// The version of ARGUS TV.
         /// </summary>
-        public const string ProductVersion = "2.3";
+        public const string ProductVersion = "2.4";
     }
 }

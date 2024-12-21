@@ -141,15 +141,20 @@ namespace ArgusTV.UI.Console
             base.OnShown(e);
             this.TopMost = true;
             this.TopMost = false;
+
+            if (Properties.Settings.Default.IsMaximised)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
         }
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if (this.Visible
-                && this.WindowState == FormWindowState.Normal)
+            if (this.Visible)
             {
                 Properties.Settings.Default.ConsoleWindowPosition = this.Location;
                 Properties.Settings.Default.ConsoleWindowSize = this.Size;
+                Properties.Settings.Default.IsMaximised = this.WindowState == FormWindowState.Maximized;
                 Properties.Settings.Default.Save();
             }
         }

@@ -344,6 +344,18 @@ namespace ArgusTV.UI.Notifier
                     && !String.IsNullOrEmpty(Config.Current.MacAddresses)
                     && !String.IsNullOrEmpty(Config.Current.IpAddress);
             }
+
+            if (_openRecorderConsoleToolStripMenuItem != null)
+            {
+                _openRecorderConsoleToolStripMenuItem.Enabled = Config.Current != null
+                    && !String.IsNullOrEmpty(Config.Current.RecPath)
+                    && File.Exists(Config.Current.RecPath);
+                _wakeupServerToolStripMenuItem.Enabled = Config.Current != null
+                    && !this.IsConnected
+                    && !String.IsNullOrEmpty(Config.Current.ServerName)
+                    && !String.IsNullOrEmpty(Config.Current.MacAddresses)
+                    && !String.IsNullOrEmpty(Config.Current.IpAddress);
+            }
         }
 
         private void _iconContextMenuStrip_Closed(object sender, ToolStripDropDownClosedEventArgs e)
@@ -371,6 +383,18 @@ namespace ArgusTV.UI.Notifier
             catch (Exception ex)
             {
                 MessageBox.Show(this, "Failed to start the Scheduler Console." + Environment.NewLine + Environment.NewLine + ex.Message, null, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void _openRecorderConsoleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start(Config.Current.RecPath);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Failed to start the Recorder Console." + Environment.NewLine + Environment.NewLine + ex.Message, null, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 

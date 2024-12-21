@@ -42,6 +42,7 @@ namespace ArgusTV.UI.Notifier
             ServerName = "localhost";
             Port = ServerSettings.DefaultHttpsPort;
             MmcPath = @"..\Scheduler Console\ArgusTV.Scheduler.Console.exe";
+            RecPath = @"..\Recorder Console\ArgusTV.Recorder.Console.exe";
             ShowRecordingBalloons = true;
             BalloonTimeoutSeconds = 5;
         }
@@ -53,6 +54,8 @@ namespace ArgusTV.UI.Notifier
         public int BalloonTimeoutSeconds { get; set; }
 
         public string MmcPath { get; set; }
+
+        public string RecPath { get; set; }
 
         public string ServerName { get; set; }
 
