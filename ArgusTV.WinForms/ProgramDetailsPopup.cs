@@ -60,7 +60,7 @@ namespace ArgusTV.WinForms
             _dateLabel.Text = _guideProgram.StartTime.ToLongDateString();
             _widescreenLabel.Visible = (0 != (_guideProgram.Flags & GuideProgramFlags.WidescreenAspectRatio));
             _timeLabel.Text = _guideProgram.StartTime.ToShortTimeString() + "-" + _guideProgram.StopTime.ToShortTimeString();
-            _titleLabel.Text = _guideProgram.Title;
+            _titleLabel.Text = Encoding.UTF8.GetString(Encoding.Default.GetBytes(_guideProgram.Title));
             if (String.IsNullOrEmpty(_guideProgram.SubTitle))
             {
                 _detailsTableLayoutPanel.RowStyles[2].SizeType = SizeType.Absolute;
@@ -68,11 +68,11 @@ namespace ArgusTV.WinForms
             }
             else
             {
-                _subTitleLabel.Text = _guideProgram.SubTitle;
+                _subTitleLabel.Text = Encoding.UTF8.GetString(Encoding.Default.GetBytes(_guideProgram.SubTitle));
             }
 
             string description = _guideProgram.CreateCombinedDescription(false);
-            _descriptionLabel.Text = description;
+            _descriptionLabel.Text = Encoding.UTF8.GetString(Encoding.Default.GetBytes(description));
 
             using (Graphics g = this.CreateGraphics())
             {
