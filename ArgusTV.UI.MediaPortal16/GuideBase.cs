@@ -1301,7 +1301,7 @@ namespace ArgusTV.UI.MediaPortal
                         imgBut.IconWidth = cntlChannelImg.RenderWidth;
                         imgBut.IconHeight = cntlChannelImg.RenderHeight;
                         imgBut.IconKeepAspectRatio = cntlChannelImg.KeepAspectRatio;
-                        imgBut.IconCentered = cntlChannelImg.Centered;
+                        imgBut.IconCentered = cntlChannelImg.ImageAlignment == GUIControl.Alignment.Center;
                         imgBut.IconZoom = cntlChannelImg.Zoom;
                     }
                     imgBut.TextOffsetX1 = cntlChannelLabel.XPosition;
