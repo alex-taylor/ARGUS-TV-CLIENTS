@@ -57,7 +57,8 @@ namespace ArgusTV.DataContracts
         /// <summary>
         /// The program's title.
         /// </summary>
-        public string Title { get; set; }
+        public string Title { get => _title; set => _title = null == value ? null : Encoding.UTF8.GetString(Encoding.Default.GetBytes(value)); }
+        private string _title;
 
         /// <summary>
         /// The program's start time.
@@ -87,12 +88,14 @@ namespace ArgusTV.DataContracts
         /// <summary>
         /// The program's episode title.
         /// </summary>
-        public string SubTitle { get; set; }
-
+        public string SubTitle { get => _subtitle; set => _subtitle = null == value ? null : Encoding.UTF8.GetString(Encoding.Default.GetBytes(value)); }
+        private string _subtitle;
+        
         /// <summary>
         /// The program's description.
         /// </summary>
-        public string Description { get; set; }
+        public string Description { get => _description; set => _description = null == value ? null : Encoding.UTF8.GetString(Encoding.Default.GetBytes(value)); }
+        private string _description;
 
         /// <summary>
         /// The program's category.
