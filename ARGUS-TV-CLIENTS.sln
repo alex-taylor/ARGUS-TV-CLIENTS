@@ -61,11 +61,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusTV.UI.Console", "Argus
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusTV.ServiceProxy", "ArgusTV.ServiceProxy\ArgusTV.ServiceProxy.csproj", "{7C5F1D5B-AA36-48BD-B20F-47E62538D5DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusTV.ServiceProxy.NET48", "_NET48\ArgusTV.ServiceProxy\ArgusTV.ServiceProxy.NET48.csproj", "{7C5F1D5B-AA36-48BD-B20F-47E62538643A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusTV.ServiceProxy.NET48", "_NET40\ArgusTV.ServiceProxy\ArgusTV.ServiceProxy.NET48.csproj", "{7C5F1D5B-AA36-48BD-B20F-47E62538643A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusTV.DataContracts", "ArgusTV.DataContracts\ArgusTV.DataContracts.csproj", "{2D3B808E-4E79-40DF-B2FA-8C87FB50D7AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusTV.DataContracts.NET48", "_NET48\ArgusTV.DataContracts\ArgusTV.DataContracts.NET48.csproj", "{CDB911A5-A3E1-46B3-98F3-DD1EE63F64B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgusTV.DataContracts.NET48", "_NET40\ArgusTV.DataContracts\ArgusTV.DataContracts.NET48.csproj", "{CDB911A5-A3E1-46B3-98F3-DD1EE63F64B1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{1DE67D4B-6EBF-46FC-B392-93DC834EAD1E}"
 	ProjectSection(SolutionItems) = preProject

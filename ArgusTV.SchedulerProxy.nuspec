@@ -16,10 +16,10 @@
         <tags>argus argustv htpc pvr</tags>
     </metadata>
     <files>
-        <file src="_NET48\ArgusTV.DataContracts\bin\Release\ArgusTV.DataContracts.dll" target="lib\net40\ArgusTV.DataContracts.dll" />
-        <file src="_NET48\ArgusTV.DataContracts\bin\Release\ArgusTV.DataContracts.xml" target="lib\net40\ArgusTV.DataContracts.xml" />
-        <file src="_NET48\ArgusTV.ServiceProxy\bin\Release\merged\ArgusTV.ServiceProxy.dll" target="lib\net40\ArgusTV.ServiceProxy.dll" />
-        <file src="_NET48\ArgusTV.ServiceProxy\bin\Release\ArgusTV.ServiceProxy.xml" target="lib\net40\ArgusTV.ServiceProxy.xml" />
+        <file src="_NET40\ArgusTV.DataContracts\bin\Release\ArgusTV.DataContracts.dll" target="lib\net40\ArgusTV.DataContracts.dll" />
+        <file src="_NET40\ArgusTV.DataContracts\bin\Release\ArgusTV.DataContracts.xml" target="lib\net40\ArgusTV.DataContracts.xml" />
+        <file src="_NET40\ArgusTV.ServiceProxy\bin\Release\merged\ArgusTV.ServiceProxy.dll" target="lib\net40\ArgusTV.ServiceProxy.dll" />
+        <file src="_NET40\ArgusTV.ServiceProxy\bin\Release\ArgusTV.ServiceProxy.xml" target="lib\net40\ArgusTV.ServiceProxy.xml" />
         <file src="ArgusTV.DataContracts\bin\Release\ArgusTV.DataContracts.dll" target="lib\net45\ArgusTV.DataContracts.dll" />
         <file src="ArgusTV.DataContracts\bin\Release\ArgusTV.DataContracts.xml" target="lib\net45\ArgusTV.DataContracts.xml" />
         <file src="ArgusTV.ServiceProxy\bin\Release\merged\ArgusTV.ServiceProxy.dll" target="lib\net45\ArgusTV.ServiceProxy.dll" />
